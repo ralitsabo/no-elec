@@ -1,0 +1,41 @@
+/*orange: #DE8642;
+darker-orange: #FF5A09;
+darker-gray: #4B4D52;
+almost-white: #FFF2E7;
+gray-lighter: #D0CABF;
+gray-brown: #B9B1A8;*/
+
+
+body {
+  background-color: #D0CABF;
+  /*background-image: url(public/images/elec.jpg);*/
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+p {
+  color: #4B4D52;
+}
+
+.submit_for {
+  color: #4B4D52;
+  border: 3px solid #DE8642;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  background-color: #FFF2E7;
+  -webkit-filter: drop-shadow(0px 0px 10px #FF5A09);
+  transform: scale(1.25);
+}
+
+.submit-btn {
+  background-color: #DE8642;
+  color: #4B4D52;
+}
