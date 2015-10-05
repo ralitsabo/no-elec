@@ -8,13 +8,15 @@ gray-brown: #B9B1A8;*/
 
 body {
   background-color: #D0CABF;
-  /*background-image: url(public/images/elec.jpg);*/
+  background-image: url(/images/elec.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
 
 
