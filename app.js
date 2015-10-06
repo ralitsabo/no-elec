@@ -8,10 +8,10 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var bson = require('bson');
 var db = monk('127.0.0.1:27017/project');
-
-
+var requirejs = require('requirejs');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var fs = require('fs');
 
 var app = express();
 
