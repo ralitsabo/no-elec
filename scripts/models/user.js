@@ -26,7 +26,7 @@ var User = (function () {
   User.prototype.save = function() {
     // console.log(this);
     dbInterface = new DBInterface();
-    if (this.validateEmail) {
+    if (this.validateEmail()) {
       dbInterface.saveUser(this);
     } else {
       return false;

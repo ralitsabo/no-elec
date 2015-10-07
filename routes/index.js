@@ -32,10 +32,10 @@ router.post('/adduser', function(req, res) {
   var userEmail = req.body.useremail;
   var user = new User(userName, userEmail);
 
-  if(user.save()) {
+  if(user.save() == undefined) {
     res.redirect("userlist");
   } else {
-    res.send("There was a problem adding the information to the database.");
+    res.send("There was a problem.");
   }
 });
 

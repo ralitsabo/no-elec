@@ -6,16 +6,16 @@ var DBInterface = (function(){
 
   DBInterface.prototype.saveUser = function(user) {
     var collection = db.get('usercollection');
-    // collection.insert({
-    //   "username" : user._name,
-    //   "email" : user._email,
-    // }, function (err, doc) {
-    //   if (err) {
-    //     return false;
-    //   } else {
-    //     return true;
-    //   }
-    // });
+    collection.insert({
+      "username" : user._name,
+      "email" : user._email,
+    }, function (err, doc) {
+      if (err) {
+        return false;
+      } else {
+        return true;
+      }
+    });
     return 1;
   };
 
