@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.get('/userlist', function(req, res) {
   var db = req.db;
   var collection = db.get('usercollection');
-  collection.find({},{},function(e,docs){
+  collection.find({},{},function(e, docs){
     res.render('userlist', {
       "userlist" : docs
     });
@@ -32,7 +32,7 @@ router.post('/adduser', function(req, res) {
   var userEmail = req.body.useremail;
   var user = new User(userName, userEmail);
 
-  if(user.save() == undefined) {
+  if(user.save()) {
     res.redirect("userlist");
   } else {
     res.send("There was a problem.");

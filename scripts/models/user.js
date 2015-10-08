@@ -27,7 +27,7 @@ var User = (function () {
     // console.log(this);
     dbInterface = new DBInterface();
     if (this.validateEmail()) {
-      dbInterface.saveUser(this);
+      return dbInterface.saveUser(this);
     } else {
       return false;
     }
