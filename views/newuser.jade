@@ -4,6 +4,12 @@ block content
   div.container
     h1= title
     form#formAddUser(name="adduser",method="post",action="/adduser")
+      | Name:
       input#inputUserName(type="text", placeholder="username", name="username")
+      | Email:
       input#inputUserEmail(type="text", placeholder="useremail", name="useremail")
+      | Password:
+      input#inputUserPassword(type="text", placeholder="userpassword", name="userpassword")
+
+
       button#btnSubmit(type="submit") submit

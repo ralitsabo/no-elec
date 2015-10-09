@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div.container
+    h1= title
+    form#formUserAddress(name="addaddress",method="post",action="/addaddress")
+      | City:
+      input#inputUserCity(type="text", placeholder="City", name="city")
+      br
+      | Street /name/
+      input#inputUserStreet(type="text", placeholder="StreetName", name="street_name")
+      br
+      | Street /number/
+      input#inputUserStreet(type="text", placeholder="StreetNumber", name="street_number")
+      br
+      | Neighborhood
+      input#inputUserStreet(type="text", placeholder="neighborhood", name="neighborhood")
+      br
+      | Block /number/
+      input#inputUserStreet(type="text", placeholder="blockNumber", name="block_number")
+
+      button#btnSubmit(type="submit") submit

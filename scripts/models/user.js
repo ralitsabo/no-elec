@@ -1,8 +1,9 @@
 var DBInterface = require('../interfaces/db_interface.js')
 var User = (function () {
-  function User(name, email) {
+  function User(name, email, password) {
     this._name = name;
     this._email = email;
+    this._password = password;
   }
 
   User.prototype.validateEmail = function() {
